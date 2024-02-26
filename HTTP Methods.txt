@@ -1,0 +1,26 @@
+GET:
+GET is used to request data from a specified resource.
+GET requests can be cached
+GET requests remain in the browser history
+GET requests can be bookmarked
+GET requests should never be used when dealing with sensitive data
+GET requests have length restrictions
+GET requests are only used to request data (not modify)
+
+POST:
+POST is used to send data to a server to create/update a resource.
+The data sent to the server with POST is stored in the request body of the HTTP request
+POST requests are never cached
+POST requests do not remain in the browser history
+POST requests cannot be bookmarked
+POST requests have no restrictions on data length
+
+PUT:
+PUT is used to send data to a server to create/update a resource.
+The difference between POST and PUT is that PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result. In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+
+DELETE:
+The DELETE method deletes the specified resource.
+
+PATCH:
+The PATCH method is used to apply partial modifications to a resource.
